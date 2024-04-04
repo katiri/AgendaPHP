@@ -36,7 +36,7 @@
         // Algum dado foi enviado por POST
         $data = $_POST;
 
-        if($data['type'] == 'create'){
+        if($data['type'] === 'create'){
             $query = "INSERT INTO contacts (name, phone, observations) VALUES (:name, :phone, :observations)";
 
             $stmt = $conn->prepare($query);
@@ -56,7 +56,7 @@
             }
         }
 
-        if($data['type'] == 'edit'){
+        if($data['type'] === 'edit'){
             $query = "UPDATE contacts SET name = :name, phone = :phone, observations = :observations WHERE id = :id";
 
             $stmt = $conn->prepare($query);
@@ -69,6 +69,24 @@
             try{
                 $stmt->execute();
                 $_SESSION["msg"] = "Contato atualizado com sucesso!";
+            }
+            catch(PDOException $e){
+                // Erro no cadastro
+                $error = $e->getMessage();
+                echo "Erro: $error <br>";
+            }
+        }
+
+        if($data['type'] === 'delete'){
+            $query = "DELETE FROM contacts WHERE id = :id";
+
+            $stmt = $conn->prepare($query);
+            
+            $stmt->bindParam(':id', $data['id']);
+            
+            try{
+                $stmt->execute();
+                $_SESSION["msg"] = "Contato removido com sucesso!";
             }
             catch(PDOException $e){
                 // Erro no cadastro
