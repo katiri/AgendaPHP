@@ -1,0 +1,47 @@
+#main-title {
+    text-align: center;
+    margin: 15px 0 30px;
+}
+
+/* Home */
+#contacts-table {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contacts-table thead {
+    color: #FFF;
+    background-color: #007BFF;
+}
+
+.actions {
+    text-align: right;
+    width: 150px;
+}
+
+.actions i {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.check-icon {
+    color: #1E7E34;
+}
+
+.edit-icon {
+    color: #007BFF;
+}
+
+.delete-icon {
+    color: #BD2130;
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+#empty-list-text {
+    text-align: center;
+}
