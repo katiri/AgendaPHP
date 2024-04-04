@@ -51,3 +51,11 @@
     max-width: 500px;
     margin: 0 auto;
 }
+
+/* Back button */
+#back-link-container {
+    display: block;
+    width: 500px;
+    margin: 30px auto 0;
+    
+}

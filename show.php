@@ -3,6 +3,7 @@
 ?>
 
 <div id="view-contact-container" class="container">
+    <?php include('./templates/backbtn.html'); ?>
     <h1 id="main-title"><?= $contact['name'] ?></h1>
     <p><b>Telefone:</b></p>
     <p><?= $contact['phone'] ?></p>
