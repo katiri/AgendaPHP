@@ -18,3 +18,16 @@
         <link rel="stylesheet" href="<?= $BASE_URL ?>css/styles.css">
     </head>
     <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="<?= $BASE_URL ?>index.php">
+                    <img src="img/logo.svg" alt="Agenda" width="50px">
+                </a>
+                <div>
+                    <div class="navbar-nav">
+                        <a href="<?= $BASE_URL ?>index.php" id="home-link" class="nav-link active">Agenda</a>
+                        <a href="<?= $BASE_URL ?>create.php" id="create-link" class="nav-link active">Adicionar contato</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
