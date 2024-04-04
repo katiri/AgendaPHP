@@ -47,6 +47,7 @@
             
             try{
                 $stmt->execute();
+                $_SESSION["msg"] = "Contato adicionado com sucesso!";
             }
             catch(PDOException $e){
                 // Erro no cadastro

@@ -65,3 +65,10 @@
     max-width: 500px;
     margin: 0 auto;
 }
+
+/* Alert */
+#msg {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }

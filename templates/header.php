@@ -1,5 +1,11 @@
 <?php
     include_once('./config/process.php');
+
+    // limpa a mensagem
+    if(isset($_SESSION['msg'])){
+        $msg = $_SESSION['msg'];
+        $_SESSION['msg'] = "";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

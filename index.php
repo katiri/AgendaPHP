@@ -3,6 +3,9 @@
 ?>
 
 <div class="container">
+    <?php if(isset($msg) && $msg != ""): ?>
+        <div class="alert alert-success" id="msg"><?= $msg ?></div>
+    <?php endif; ?>
     <h1 id="main-title">Minha Agenda</h1>
     <?php if(count($contacts) > 0): ?>
         <table id="contacts-table" class="table">
