@@ -60,10 +60,14 @@
     
 }
 
-/* Create */
+/* Create, Update and Delete */
 #create-form, #edit-form {
     max-width: 500px;
     margin: 0 auto;
+}
+
+.delete-form {
+    display: inline-block;
 }
 
 /* Alert */
